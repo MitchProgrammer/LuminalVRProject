@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LiminalExample.unity
-    guid: 54a83721c2a297642a49dfcfbe3835bf
+    path: Assets/Scenes/GazingAtTheAurora.unity
+    guid: a538b70e47a1f00498943511e932526f
   m_configObjects: {}
