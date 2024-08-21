@@ -830,13 +830,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'As you settle into the experience, let the sounds of the rain, thunder,
-    and crackling fire envelop you. This gentle sequence, from the rhythmic pitter-patter
-    of rain to the occasional flash of lightning, is designed to guide you into a
-    state of deep relaxation and peaceful sleep.
-
-
-    Enjoy your tranquil journey into restfulness."'
+  m_text: If your mind begins to wander, gently bring it back to the breath and the
+    beauty of the northern lights above. Allow any thoughts or emotions to drift away,
+    like snowflakes carried by a gentle breeze. Keep your focus on the rhythm of your
+    breath, in this tranquil, snowy world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1076,6 +1073,200 @@ MonoBehaviour:
   m_Script: {fileID: -347508319, guid: 1661fa78af9aece459a3302206a05902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &413129008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413129013}
+  - component: {fileID: 413129012}
+  - component: {fileID: 413129009}
+  - component: {fileID: 413129011}
+  - component: {fileID: 413129010}
+  m_Layer: 5
+  m_Name: Text (TMP) (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &413129009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413129008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: Slowly begin to bring your awareness back to your body, feeling the coolness
+    of the snow and the gentle glow of the northern lights above. Take a deep breath
+    in, and as you exhale, slowly remove your headset. Take a moment to appreciate
+    the calmness and peace that this snowy landscape has brought you. Carry this sense
+    of serenity with you as you continue your day. Go in peace.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 7
+  m_fontSizeBase: 7
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 413129009}
+    characterCount: 328
+    spriteCount: 0
+    spaceCount: 53
+    wordCount: 53
+    linkCount: 0
+    lineCount: 5
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!225 &413129010
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413129008}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &413129011
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413129008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c052528cee3f18d438c6889ea66b574a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!222 &413129012
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413129008}
+  m_CullTransparentMesh: 0
+--- !u!224 &413129013
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413129008}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547391106}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.050002992, y: 0}
+  m_SizeDelta: {x: 300.1, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &534824330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,8 +1386,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547391105}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 0, y: 0, z: 1426}
+  m_LocalRotation: {x: -0, y: 0.99218106, z: -0, w: -0.12480742}
+  m_LocalPosition: {x: 0, y: 0, z: 1324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2080069669}
@@ -1204,12 +1395,13 @@ RectTransform:
   - {fileID: 1509253653}
   - {fileID: 691872205}
   - {fileID: 395428894}
+  - {fileID: 413129013}
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 194.33899, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1727.2, y: -216}
+  m_AnchoredPosition: {x: 1620, y: -216}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547391107
@@ -6392,12 +6584,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'As you enter this VR experience, you find yourself lying comfortably on
-    a bed. In front of you, a softly crackling fireplace casts a warm glow, enhancing
-    the serene atmosphere.
-
-
-'
+  m_text: "As you sit beneath the dancing northern lights, take a moment to reflect
+    on the vastness of the universe. The aurora swirls above, a majestic and ancient
+    display of nature's power. You might feel small, even insignificant, in the face
+    of such grandeur. And that\u2019s okay.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6587,10 +6777,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Directly in front of the bed is a long cushioned seat with books and a pillow.
-    On the nightstand to your right, you'll find a menu to turn the music on and off,
-    allowing you to tailor the experience to your preference. Above you, a night light
-    casts a slow-moving, soft glow, designed to help you drift into sleep.
+  m_text: Let go of the need to be anything more than who you are right now. Just
+    as the snowflakes settle softly on the ground, you can settle into this moment,
+    accepting your place in the grand tapestry of life. Breathe deeply, and with each
+    exhale, release any feelings of inadequacy or fear. You are a part of this world,
+    and that is enough.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7260,7 +7451,7 @@ AudioSource:
   m_Volume: 0.25
   m_Pitch: 1.4
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -9002,10 +9193,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: On both your left and right, windows adorned with heavy curtains let in
-    the sound of rain pattering gently against the glass, mingling with distant rumbles
-    of thunder to create a soothing symphony. Occasionally, brief glimpses of the
-    storm outside and gentle flashes of distant lightning add to the calming ambiance.
+  m_text: "Allow yourself to embrace this feeling of insignificance, recognizing that
+    it\u2019s a natural response to witnessing something so awe-inspiring. Understand
+    that being a part of this vast, beautiful universe, even in a small way, is a
+    profound experience."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9590,19 +9781,22 @@ MonoBehaviour:
   - {fileID: 1509253657}
   - {fileID: 691872209}
   - {fileID: 395428890}
+  - {fileID: 413129009}
   audioClips:
-  - {fileID: 8300000, guid: 646a3ffff0175f14aa28ef15cd216fa0, type: 3}
-  - {fileID: 8300000, guid: 02b53733ca542c5439e3986ed3286cf1, type: 3}
-  - {fileID: 8300000, guid: 96fac0966d378d24198a4a5a3015b517, type: 3}
-  - {fileID: 8300000, guid: 03c06a1551a65ec4ea06cf838699cffd, type: 3}
-  - {fileID: 8300000, guid: f524071fcd7c1724a912bce01523be14, type: 3}
+  - {fileID: 8300000, guid: 0abb0188b20e1af41a815e24b8048790, type: 3}
+  - {fileID: 8300000, guid: 2ebf67899fdca5e458118d494e8da291, type: 3}
+  - {fileID: 8300000, guid: 0ec7b81d254b3e94aba2173381000ce4, type: 3}
+  - {fileID: 8300000, guid: 88c4f298f2635484287bdb22246cb778, type: 3}
+  - {fileID: 8300000, guid: 2acd860efb7271346aba12f33d48b2a9, type: 3}
+  - {fileID: 8300000, guid: 161d5e61cf27abb42bb3a4d79077e067, type: 3}
   audioSource: {fileID: 1762100987}
   displayDurations:
-  - 6
-  - 14
-  - 21
-  - 23
+  - 28
   - 22
+  - 19
+  - 26
+  - 21
+  - 30
 --- !u!4 &1762100989
 Transform:
   m_ObjectHideFlags: 0
@@ -10637,10 +10831,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"Welcome to ''Fireside Slumber,'' your sanctuary for rest and relaxation.
-
-
-'
+  m_text: "Welcome to our experience \u201CGazing at the Aurora\u201D. Imagine yourself
+    standing comfortably on the soft snow, feeling the crisp, cool air around you.
+    Close your eyes and take a deep breath in, drawing in the freshness of the cold
+    air, and then slowly exhale, releasing any tension. Let the stillness of this
+    snowy landscape bring you into the present moment.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10709,12 +10904,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2080069673}
-    characterCount: 73
+    characterCount: 356
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 10
+    spaceCount: 61
+    wordCount: 60
     linkCount: 0
-    lineCount: 2
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
