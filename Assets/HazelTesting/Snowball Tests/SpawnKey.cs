@@ -82,7 +82,7 @@ public class SpawnKey : MonoBehaviour
             rb.useGravity = true;
             if(rb != null)
             {
-                rb.velocity = transform.forward * 10f;
+                rb.velocity = transform.forward * 1f;
             }
 
             holding = false;

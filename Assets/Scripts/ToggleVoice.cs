@@ -4,14 +4,16 @@ using UnityEngine.UI;
 public class ToggleVoice : MonoBehaviour
 {
     public Toggle toggle;
-    public AudioSource audioSource;
+    public AudioSource voiceThing;
     public GameObject subtitleText;
+    public UIManager annoyingScript;
 
     void Start()
     {
         // Play the audio source when the scene starts
-        audioSource.Play();
+        voiceThing.Play();
         subtitleText.SetActive(true);
+        annoyingScript.isPaused = false;
 
         // Set the toggle to be on by default
         toggle.isOn = true;
@@ -28,13 +30,15 @@ public class ToggleVoice : MonoBehaviour
         // Play or pause the audio source based on the toggle's value
         if (change.isOn)
         {
-            audioSource.Play();
+            voiceThing.Play();
             subtitleText.SetActive(true);
+            annoyingScript.isPaused = false;
         }
         else
         {
-            audioSource.Pause();
+            voiceThing.Pause();
             subtitleText.SetActive(false);
+            annoyingScript.isPaused = true;
         }
     }
 }

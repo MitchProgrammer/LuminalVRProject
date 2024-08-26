@@ -6,12 +6,14 @@ public class ToggleSnow : MonoBehaviour
 {
     public Toggle toggle;
     public ParticleSystem particle;
-
+    
     void Start()
     {
         var emission = particle.emission;
+        var main = particle.main;
         // Play the audio source when the scene starts
         emission.enabled = true;
+        main.startLifetimeMultiplier = 5f;
 
         // Set the toggle to be on by default
         toggle.isOn = true;
@@ -26,14 +28,17 @@ public class ToggleSnow : MonoBehaviour
     void ToggleValueChanged(Toggle change)
     {
         var emissions = particle.emission;
+        var main = particle.main;
         // Play or pause the audio source based on the toggle's value
         if (change.isOn)
         {
             emissions.enabled = true;
+            main.startLifetimeMultiplier = 5f;
         }
         else
         {
             emissions.enabled = false;
+            main.startLifetimeMultiplier = 0.1f;
         }
     }
 }

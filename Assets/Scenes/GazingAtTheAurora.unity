@@ -298,6 +298,10 @@ PrefabInstance:
       propertyPath: simulationSpeed
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 19904136, guid: da60e5460ab2b4a479d4ac2293e0c824, type: 3}
+      propertyPath: m_NormalDirection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da60e5460ab2b4a479d4ac2293e0c824, type: 3}
 --- !u!1 &275526120
@@ -8303,8 +8307,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggle: {fileID: 764822723}
-  audioSource: {fileID: 0}
+  voiceThing: {fileID: 1762100987}
   subtitleText: {fileID: 547391105}
+  annoyingScript: {fileID: 1762100988}
 --- !u!114 &1189917940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9797,6 +9802,7 @@ MonoBehaviour:
   - 26
   - 21
   - 30
+  isPaused: 0
 --- !u!4 &1762100989
 Transform:
   m_ObjectHideFlags: 0

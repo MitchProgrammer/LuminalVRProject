@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public float[] displayDurations;
     private Animator[] animators;
     private CanvasGroup[] canvasGroups;
+    public bool isPaused;
 
     private void Start()
     {
@@ -29,28 +30,31 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator DisplayPrompts()
     {
-        for (int i = 0; i < prompts.Length; i++)
+        if (!isPaused)
         {
-            // Set active and trigger fade-in
-            prompts[i].gameObject.SetActive(true);
-            animators[i].SetTrigger("FadeIn");
-            audioSource.clip = audioClips[i];
-            audioSource.Play();
+            for (int i = 0; i < prompts.Length; i++)
+            {
+                // Set active and trigger fade-in
+                prompts[i].gameObject.SetActive(true);
+                animators[i].SetTrigger("FadeIn");
+                audioSource.clip = audioClips[i];
+                audioSource.Play();
 
-            // Wait for the fade-in animation to complete (adjust this duration to match the fade-in animation length)
-            yield return new WaitForSeconds(1f);
+                // Wait for the fade-in animation to complete (adjust this duration to match the fade-in animation length)
+                yield return new WaitForSeconds(1f);
 
-            // Wait for the display duration
-            yield return new WaitForSeconds(displayDurations[i]);
+                // Wait for the display duration
+                yield return new WaitForSeconds(displayDurations[i]);
 
-            // Trigger fade-out
-            animators[i].SetTrigger("FadeOut");
+                // Trigger fade-out
+                animators[i].SetTrigger("FadeOut");
 
-            // Wait for the fade-out animation to complete (adjust this duration to match the fade-out animation length)
-            yield return new WaitForSeconds(1f);
+                // Wait for the fade-out animation to complete (adjust this duration to match the fade-out animation length)
+                yield return new WaitForSeconds(1f);
 
-            // Set inactive after fade-out
-            prompts[i].gameObject.SetActive(false);
+                // Set inactive after fade-out
+                prompts[i].gameObject.SetActive(false);
+            }
         }
     }
 }
