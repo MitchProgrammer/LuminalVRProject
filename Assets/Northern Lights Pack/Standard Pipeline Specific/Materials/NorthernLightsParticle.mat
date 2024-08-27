@@ -71,8 +71,8 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistortScale: 0.00069
-    - _DistortSpeed: 0.2
+    - _DistortScale: 0.00004
+    - _DistortSpeed: 0.102
     - _DstBlend: 0
     - _Elevation: 0
     - _GlossMapScale: 1
