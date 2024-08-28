@@ -70,14 +70,14 @@ public class SnowGrow : MonoBehaviour
         }
     }
     #endregion
-
-    private void EndOfLife() //testing lifetime feature
+    
+    private void EndOfLife() //testing lifetime feature (not doneyet)
     {
         float timer = 0;
-        while(timer != shrinkTime)
+        while(timer < shrinkTime)
         {
             timer = timer + 1 * Time.deltaTime;
         }
     }
-
+    
 }
