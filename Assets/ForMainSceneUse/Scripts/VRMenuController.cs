@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using Liminal.SDK.VR;
+using Liminal.SDK.VR.Input;
 
 public class VRMenuController : MonoBehaviour
 {
@@ -12,9 +14,10 @@ public class VRMenuController : MonoBehaviour
 
     void Update()
     {
+        var primaryInput = VRDevice.Device.PrimaryInputDevice;
+
         // Activate the menu on input from either the primary or secondary trigger
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || 
-            OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))  // For Oculus
+        if (primaryInput.GetButtonDown(VRButton.One))
         {
             ActivateMenu();
         }

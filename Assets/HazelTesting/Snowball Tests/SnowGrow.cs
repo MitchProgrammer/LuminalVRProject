@@ -52,7 +52,7 @@ public class SnowGrow : MonoBehaviour
     {
         if(collision.collider.tag == "Snow" && !holded)
         {
-            EndOfLife();
+            StartCoroutine(EndOfLife());
         }
     }
     private void OnCollisionStay(Collision touchy)
@@ -70,14 +70,26 @@ public class SnowGrow : MonoBehaviour
         }
     }
     #endregion
-    
-    private void EndOfLife() //testing lifetime feature (not doneyet)
+
+    private IEnumerator EndOfLife()
     {
-        float timer = 0;
-        while(timer < shrinkTime)
+        yield return new WaitForSeconds(shrinkTime);
+
+        shrink = true;
+        float initialSize = size;
+        float elapsedTime = 0;
+
+        while (size > 0)
         {
-            timer = timer + 1 * Time.deltaTime;
+            elapsedTime += Time.deltaTime;
+            float shrinkAmount = Mathf.Lerp(initialSize, 0, elapsedTime / shrinkTime);
+            size = shrinkAmount;
+            transform.localScale = new Vector3(size, size, size);
+            yield return null;
         }
+
+        // Optional: Destroy or deactivate the snowball after shrinking
+        gameObject.SetActive(false);
     }
-    
+
 }

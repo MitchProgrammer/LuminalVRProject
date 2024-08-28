@@ -106,12 +106,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transfirm: {fileID: 0}
+  rigidBody: {fileID: 0}
   size: 0.1
   maxSize: 2
-  rigidBody: {fileID: 0}
   velotown: {x: 0, y: 0, z: 0}
   isGrowTime: 0
   growthRate: 0.01
+  shrinkTime: 20
 --- !u!54 &3452399463363653126
 Rigidbody:
   m_ObjectHideFlags: 0

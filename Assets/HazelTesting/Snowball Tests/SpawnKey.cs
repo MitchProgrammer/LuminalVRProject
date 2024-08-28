@@ -26,7 +26,7 @@ public class SpawnKey : MonoBehaviour
 
     private void Update()
     {
-        var primaryInput = VRDevice.Device.PrimaryInputDevice;
+        var primaryInput = VRDevice.Device.SecondaryInputDevice;
         if (amountBalls < maxBalls)
         {
             if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
