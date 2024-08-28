@@ -14,10 +14,10 @@ public class VRMenuController : MonoBehaviour
 
     void Update()
     {
-        var primaryInput = VRDevice.Device.PrimaryInputDevice;
+        var secondaryInput = VRDevice.Device.SecondaryInputDevice;
 
         // Activate the menu on input from either the primary or secondary trigger
-        if (primaryInput.GetButtonDown(VRButton.One))
+        if (secondaryInput.GetButtonDown(VRButton.One))
         {
             ActivateMenu();
         }

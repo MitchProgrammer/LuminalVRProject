@@ -19,11 +19,19 @@ public class SnowGrow : MonoBehaviour
     public float shrinkTime = 20f;
     private bool shrink = false;
 
+    public SpawnKey handSpawnKey;
+
     private void Start()
     {
         transfirm = GetComponent<Transform>();
         rigidBody = GetComponent<Rigidbody>();
     }
+
+    private void OnEnable()
+    {
+        handSpawnKey = GetComponentInParent<SpawnKey>();
+    }
+
     private void Update()
     {
         velotown = rigidBody.velocity;
@@ -90,6 +98,8 @@ public class SnowGrow : MonoBehaviour
 
         // Optional: Destroy or deactivate the snowball after shrinking
         gameObject.SetActive(false);
+        handSpawnKey.amountBalls--;
+        
     }
 
 }

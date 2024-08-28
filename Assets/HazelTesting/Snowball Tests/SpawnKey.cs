@@ -14,7 +14,7 @@ public class SpawnKey : MonoBehaviour
     public float maxBalls = 10f;
 
     private GameObject currentBall; // ball that is being held
-    private float amountBalls;
+    public float amountBalls;
     private bool holding;
 
     #endregion
@@ -26,7 +26,7 @@ public class SpawnKey : MonoBehaviour
 
     private void Update()
     {
-        var primaryInput = VRDevice.Device.SecondaryInputDevice;
+        var primaryInput = VRDevice.Device.PrimaryInputDevice;
         if (amountBalls < maxBalls)
         {
             if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
