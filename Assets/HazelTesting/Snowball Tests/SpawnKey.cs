@@ -10,8 +10,11 @@ public class SpawnKey : MonoBehaviour
     #region Variables :3
     public GameObject snobalObj; //snowball
     public float maxDistance = 10f; // Maximum distance to grab the balls
+    public float oomph = 3f;//the strength of the throw
+    public float maxBalls = 10f;
 
     private GameObject currentBall; // ball that is being held
+    private float amountBalls;
     private bool holding;
 
     #endregion
@@ -24,22 +27,25 @@ public class SpawnKey : MonoBehaviour
     private void Update()
     {
         var primaryInput = VRDevice.Device.PrimaryInputDevice;
-
-        if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
+        if (amountBalls < maxBalls)
         {
-            if(holding)
+            if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
             {
-                return;
-            }
-            else
-            {
-                TryFourSnowBal();
+                if (holding)
+                {
+                    return;
+                }
+                else
+                {
+                    TryFourSnowBal();
+                }
             }
         }
-        if(primaryInput.GetButtonUp(VRButton.One) || Input.GetMouseButtonUp(0))
-        {
-            ReleaseBal();
-        }
+            if (primaryInput.GetButtonUp(VRButton.One) || Input.GetMouseButtonUp(0))
+            {
+                ReleaseBal();
+            }
+        
     }
 
 
@@ -62,6 +68,7 @@ public class SpawnKey : MonoBehaviour
                 pooledObject.transform.localPosition = Vector3.zero;
                 pooledObject.transform.localRotation = Quaternion.identity;
                 rbpooled.useGravity = false;
+                amountBalls++;
                 
                 
                 pooledObject.SetActive(true);
@@ -82,7 +89,7 @@ public class SpawnKey : MonoBehaviour
             rb.useGravity = true;
             if(rb != null)
             {
-                rb.velocity = transform.forward * 1f;
+                rb.velocity = transform.forward * oomph;
             }
 
             holding = false;
