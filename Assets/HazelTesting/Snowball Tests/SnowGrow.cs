@@ -6,16 +6,16 @@ using UnityEngine;
 
 public class SnowGrow : MonoBehaviour
 {
-    public Transform transfirm;
+    public Transform snowTransform;
     public Rigidbody rigidBody;
 
     public float size = 0.1f;
     public float maxSize = 2f;
     
-    public Vector3 velotown; //velocity of the growing obj
-    public bool isGrowTime; //if it is on the growing material
+    public Vector3 velocity; //velocity of the growing obj
+    public bool isOnGrowMat; //if it is on the growing material
     public float growthRate = 0.1f; 
-    public bool holded; //if the snowball isn't being held
+    public bool held; //if the snowball isn't being held
 
     public float shrinkTime = 20f;
     private bool shrink = false;
@@ -24,7 +24,7 @@ public class SnowGrow : MonoBehaviour
 
     private void Start()
     {
-        transfirm = GetComponent<Transform>();
+        snowTransform = GetComponent<Transform>();
         rigidBody = GetComponent<Rigidbody>();
     }
 
@@ -35,11 +35,11 @@ public class SnowGrow : MonoBehaviour
 
     private void Update()
     {
-        holded = handSpawnKey.holding;
-        velotown = rigidBody.velocity;
-        if (isGrowTime && !holded && !shrink)
+        held = handSpawnKey.holding;
+        velocity = rigidBody.velocity;
+        if (isOnGrowMat && !held && !shrink)
         {
-            float velocityMagnitude = velotown.magnitude; // Get the magnitude of the velocity
+            float velocityMagnitude = velocity.magnitude; // Get the magnitude of the velocity
             if (velocityMagnitude > 0)
             {
                 // Adjust growth rate based on current size to slow growth as size increases
@@ -52,7 +52,7 @@ public class SnowGrow : MonoBehaviour
                 {
                     size += growthAmount;
                 }    
-                transform.localScale = new Vector3(size, size, size); // Apply new size
+                snowTransform.localScale = new Vector3(size, size, size); // Apply new size
             }
         }
     }
@@ -60,23 +60,23 @@ public class SnowGrow : MonoBehaviour
     //is touching ground
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == "Snow" && !holded)
+        if(collision.collider.tag == "Snow" && !held)
         {
             StartCoroutine(EndOfLife());
         }
     }
     private void OnCollisionStay(Collision touchy)
     {
-        if (touchy.collider.tag == "Snow" && !holded)
+        if (touchy.collider.tag == "Snow" && !held)
         {
-            isGrowTime = true;
+            isOnGrowMat = true;
         }
     }
     private void OnCollisionExit(Collision noTouchy)
     {
-        if(noTouchy.collider.tag == "Snow" && !holded)
+        if(noTouchy.collider.tag == "Snow" && !held)
         {
-            isGrowTime = false;
+            isOnGrowMat = false;
         }
     }
     #endregion
@@ -86,7 +86,7 @@ public class SnowGrow : MonoBehaviour
         while (true)
         {
             // Wait until the snowball is not held to start the end-of-life timer
-            while (holded)
+            while (held)
             {
                 yield return null; // Wait for the next frame
             }
@@ -96,7 +96,7 @@ public class SnowGrow : MonoBehaviour
             while (shrinkTimer < shrinkTime)
             {
                 // If the snowball is picked up, reset the timer
-                if (holded)
+                if (held)
                 {
                     yield return null;
                     break;
@@ -106,14 +106,14 @@ public class SnowGrow : MonoBehaviour
                 yield return null;
             }
 
-            if (!holded && shrinkTimer >= shrinkTime)
+            if (!held && shrinkTimer >= shrinkTime)
             {
                 float initialSize = size;
                 float elapsedTime = 0;
 
                 while (size > 0)
                 {
-                    if (holded)
+                    if (held)
                     {
                         yield return null;
                         shrink = false;
@@ -123,7 +123,7 @@ public class SnowGrow : MonoBehaviour
                     elapsedTime += Time.deltaTime;
                     float shrinkAmount = Mathf.Lerp(initialSize, 0, elapsedTime / shrinkTime);
                     size = shrinkAmount;
-                    transform.localScale = new Vector3(size, size, size);
+                    snowTransform.localScale = new Vector3(size, size, size);
                     yield return null;
                 }
             }

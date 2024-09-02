@@ -8,9 +8,9 @@ using System;
 public class SpawnKey : MonoBehaviour
 {
     #region Variables :3
-    public GameObject snobalObj; //snowball
+    public GameObject snowballObj; //snowball
     public float maxDistance = 10f; // Maximum distance to grab the balls
-    public float oomph = 3f;//the strength of the throw
+    public float throwStrength = 3f;//the strength of the throw
     public float maxBalls = 10f;
 
     private GameObject currentBall; // ball that is being held
@@ -30,18 +30,18 @@ public class SpawnKey : MonoBehaviour
             }
             else
             {
-                TryFourSnowBal();
+                TryForSnowBall();
             }
         }
         if (primaryInput.GetButtonUp(VRButton.One) || Input.GetMouseButtonUp(0))
         {
-            ReleaseBal();
+            ReleaseBall();
         }
         
     }
 
 
-    private void TryFourSnowBal()
+    private void TryForSnowBall()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
@@ -67,11 +67,11 @@ public class SpawnKey : MonoBehaviour
             // Check if the object hit by the ray has the "snow" tag
             else if (hit.collider.CompareTag("Snow") && amountBalls < maxBalls)
             {
-                GameObject pooledObject = PoolManager.current.GetPooledObject(snobalObj.name);
+                GameObject pooledObject = PoolManager.current.GetPooledObject(snowballObj.name);
                 Rigidbody rbpooled = pooledObject.GetComponent<Rigidbody>();
                 if (pooledObject == null)
                 {
-                    Debug.Log("couldn't find " + snobalObj.name + " hmmm");
+                    Debug.Log("couldn't find " + snowballObj.name + " hmmm");
                     return;
                 }
                 pooledObject.transform.SetParent(transform);
@@ -89,7 +89,7 @@ public class SpawnKey : MonoBehaviour
         }
     }
 
-    private void ReleaseBal()
+    private void ReleaseBall()
     {
         if(currentBall != null)
         {
@@ -99,7 +99,7 @@ public class SpawnKey : MonoBehaviour
             rb.useGravity = true;
             if(rb != null)
             {
-                rb.velocity = transform.forward * oomph;
+                rb.velocity = transform.forward * throwStrength;
             }
 
             holding = false;
