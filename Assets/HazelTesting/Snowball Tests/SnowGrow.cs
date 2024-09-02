@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 
@@ -14,7 +15,7 @@ public class SnowGrow : MonoBehaviour
     public Vector3 velotown; //velocity of the growing obj
     public bool isGrowTime; //if it is on the growing material
     public float growthRate = 0.1f; 
-    static public bool holded; //if the snowball isn't being held
+    public bool holded; //if the snowball isn't being held
 
     public float shrinkTime = 20f;
     private bool shrink = false;
@@ -34,6 +35,7 @@ public class SnowGrow : MonoBehaviour
 
     private void Update()
     {
+        holded = handSpawnKey.holding;
         velotown = rigidBody.velocity;
         if (isGrowTime && !holded && !shrink)
         {
@@ -81,25 +83,63 @@ public class SnowGrow : MonoBehaviour
 
     private IEnumerator EndOfLife()
     {
-        yield return new WaitForSeconds(shrinkTime);
-
-        shrink = true;
-        float initialSize = size;
-        float elapsedTime = 0;
-
-        while (size > 0)
+        while (true)
         {
-            elapsedTime += Time.deltaTime;
-            float shrinkAmount = Mathf.Lerp(initialSize, 0, elapsedTime / shrinkTime);
-            size = shrinkAmount;
-            transform.localScale = new Vector3(size, size, size);
-            yield return null;
-        }
+            // Wait until the snowball is not held to start the end-of-life timer
+            while (holded)
+            {
+                yield return null; // Wait for the next frame
+            }
 
-        // Optional: Destroy or deactivate the snowball after shrinking
-        gameObject.SetActive(false);
-        handSpawnKey.amountBalls--;
-        
+            float shrinkTimer = 0f;
+
+            while (shrinkTimer < shrinkTime)
+            {
+                // If the snowball is picked up, reset the timer
+                if (holded)
+                {
+                    yield return null;
+                    break;
+                }
+
+                shrinkTimer += Time.deltaTime;
+                yield return null;
+            }
+
+            if (!holded && shrinkTimer >= shrinkTime)
+            {
+                float initialSize = size;
+                float elapsedTime = 0;
+
+                while (size > 0)
+                {
+                    if (holded)
+                    {
+                        yield return null;
+                        shrink = false;
+                        break;
+                    }
+                    shrink = true;
+                    elapsedTime += Time.deltaTime;
+                    float shrinkAmount = Mathf.Lerp(initialSize, 0, elapsedTime / shrinkTime);
+                    size = shrinkAmount;
+                    transform.localScale = new Vector3(size, size, size);
+                    yield return null;
+                }
+            }
+
+
+
+
+            if(size <= 0)
+            {
+                // Destroy or deactivate the snowball after shrinking
+                gameObject.SetActive(false);
+                handSpawnKey.amountBalls--;
+                yield break;
+            }
+            
+        }
     }
 
 }

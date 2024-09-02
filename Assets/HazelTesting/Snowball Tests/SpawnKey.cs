@@ -15,36 +15,28 @@ public class SpawnKey : MonoBehaviour
 
     private GameObject currentBall; // ball that is being held
     public float amountBalls;
-    private bool holding;
+    public bool holding;
 
     #endregion
-
-    private void Start()
-    {
-        holding = SnowGrow.holded;
-    }
 
     private void Update()
     {
         var primaryInput = VRDevice.Device.PrimaryInputDevice;
-        if (amountBalls < maxBalls)
+        if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
         {
-            if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
+            if (holding)
             {
-                if (holding)
-                {
-                    return;
-                }
-                else
-                {
-                    TryFourSnowBal();
-                }
+            return;
+            }
+            else
+            {
+                TryFourSnowBal();
             }
         }
-            if (primaryInput.GetButtonUp(VRButton.One) || Input.GetMouseButtonUp(0))
-            {
-                ReleaseBal();
-            }
+        if (primaryInput.GetButtonUp(VRButton.One) || Input.GetMouseButtonUp(0))
+        {
+            ReleaseBal();
+        }
         
     }
 
@@ -54,14 +46,32 @@ public class SpawnKey : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
+            if(hit.collider.CompareTag("Snowball"))
+            {
+                GameObject existingObject = hit.transform.gameObject;
+                Rigidbody rbExistingObj = existingObject.GetComponent<Rigidbody>();
+                if(existingObject == null)
+                {
+                    Debug.Log("what? there's no snowball??");
+                    return;
+                }
+                rbExistingObj.velocity = Vector3.zero;
+                existingObject.transform.SetParent(transform);
+                existingObject.transform.localPosition = Vector3.zero;
+                existingObject.transform.localRotation = Quaternion.identity;
+                rbExistingObj.useGravity = false;
+
+                currentBall = existingObject;
+                holding = true;
+            }
             // Check if the object hit by the ray has the "snow" tag
-            if (hit.collider.CompareTag("Snow"))
+            else if (hit.collider.CompareTag("Snow") && amountBalls < maxBalls)
             {
                 GameObject pooledObject = PoolManager.current.GetPooledObject(snobalObj.name);
                 Rigidbody rbpooled = pooledObject.GetComponent<Rigidbody>();
                 if (pooledObject == null)
                 {
-                    Debug.Log("couldn't find " + snobalObj.name + " dumbass");
+                    Debug.Log("couldn't find " + snobalObj.name + " hmmm");
                     return;
                 }
                 pooledObject.transform.SetParent(transform);

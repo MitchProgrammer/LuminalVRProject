@@ -9172,6 +9172,7 @@ MonoBehaviour:
   maxDistance: 10
   oomph: 3
   maxBalls: 10
+  amountBalls: 0
 --- !u!1 &1284629921
 GameObject:
   m_ObjectHideFlags: 0
@@ -10845,7 +10846,7 @@ GameObject:
   - component: {fileID: 1979157597}
   - component: {fileID: 1979157596}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Collision Floor
   m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

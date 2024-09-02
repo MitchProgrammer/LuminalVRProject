@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3452399463363653126}
   m_Layer: 0
   m_Name: Snowball
-  m_TagString: Untagged
+  m_TagString: Snowball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +113,7 @@ MonoBehaviour:
   isGrowTime: 0
   growthRate: 0.01
   shrinkTime: 20
+  handSpawnKey: {fileID: 0}
 --- !u!54 &3452399463363653126
 Rigidbody:
   m_ObjectHideFlags: 0
