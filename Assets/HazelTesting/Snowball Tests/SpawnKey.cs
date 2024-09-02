@@ -11,11 +11,11 @@ public class SpawnKey : MonoBehaviour
     public GameObject snowballObj; //snowball
     public float maxDistance = 10f; // Maximum distance to grab the balls
     public float throwStrength = 3f;//the strength of the throw
-    public float maxBalls = 10f;
+    public float maxBalls = 10f; // maximum amount of snowballs allowed at one time
 
     private GameObject currentBall; // ball that is being held
-    public float amountBalls;
-    public bool holding;
+    public float amountBalls; //current amount of balls at one time
+    public bool holding; //if the ball is being held
 
     #endregion
 
@@ -46,6 +46,7 @@ public class SpawnKey : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
+            //check if the object hit by the ray has the snowball tag
             if(hit.collider.CompareTag("Snowball"))
             {
                 GameObject existingObject = hit.transform.gameObject;
@@ -64,7 +65,7 @@ public class SpawnKey : MonoBehaviour
                 currentBall = existingObject;
                 holding = true;
             }
-            // Check if the object hit by the ray has the "snow" tag
+            // Check if the object hit by the ray has the snow tag and that the current amount of balls in the world doesn't exceed the maxiumum
             else if (hit.collider.CompareTag("Snow") && amountBalls < maxBalls)
             {
                 GameObject pooledObject = PoolManager.current.GetPooledObject(snowballObj.name);
@@ -99,9 +100,9 @@ public class SpawnKey : MonoBehaviour
             rb.useGravity = true;
             if(rb != null)
             {
-                rb.velocity = transform.forward * throwStrength;
+                rb.velocity = transform.forward * throwStrength; //throws the snowball
             }
-
+            //resets the hand's currently held ball and if it's holding a ball
             holding = false;
             currentBall = null;
 
