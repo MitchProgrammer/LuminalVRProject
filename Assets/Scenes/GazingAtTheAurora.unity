@@ -14208,7 +14208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19361fe563151a847bd0adb5c35262a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snowballObj: {fileID: 0}
+  snowballObj: {fileID: 3452399463363653132, guid: d33213c2ffddfec43bff734ec028aae4,
+    type: 3}
   maxDistance: 10
   throwStrength: 3
   maxBalls: 10
