@@ -56,11 +56,11 @@ public class SpawnKey : MonoBehaviour
                     Debug.Log("what? there's no snowball??");
                     return;
                 }
-                rbExistingObj.velocity = Vector3.zero;
+                rbExistingObj.isKinematic = true;
                 existingObject.transform.SetParent(transform);
                 existingObject.transform.localPosition = Vector3.zero;
                 existingObject.transform.localRotation = Quaternion.identity;
-                rbExistingObj.useGravity = false;
+                
 
                 currentBall = existingObject;
                 holding = true;
@@ -75,10 +75,10 @@ public class SpawnKey : MonoBehaviour
                     Debug.Log("couldn't find " + snowballObj.name + " hmmm");
                     return;
                 }
+                rbpooled.isKinematic = true;
                 pooledObject.transform.SetParent(transform);
                 pooledObject.transform.localPosition = Vector3.zero;
                 pooledObject.transform.localRotation = Quaternion.identity;
-                rbpooled.useGravity = false;
                 amountBalls++;
                 
                 
@@ -97,7 +97,7 @@ public class SpawnKey : MonoBehaviour
             currentBall.transform.SetParent(null);
 
             Rigidbody rb = currentBall.GetComponent<Rigidbody>();
-            rb.useGravity = true;
+            rb.isKinematic = false;
             if(rb != null)
             {
                 rb.velocity = transform.forward * throwStrength; //throws the snowball

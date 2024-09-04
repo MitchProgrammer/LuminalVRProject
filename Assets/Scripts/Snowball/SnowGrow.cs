@@ -30,6 +30,7 @@ public class SnowGrow : MonoBehaviour
     private void OnEnable()
     {
         handSpawnKey = GetComponentInParent<SpawnKey>();
+        transform.localScale = new Vector3(size, size, size);
     }
 
     private void Update()
@@ -135,6 +136,8 @@ public class SnowGrow : MonoBehaviour
                 // Destroy or deactivate the snowball after shrinking
                 gameObject.SetActive(false);
                 handSpawnKey.amountBalls--;
+                size = 0.1f;
+                isOnGrowMat = false;
                 yield break;
             }
             
