@@ -10384,12 +10384,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 710a06a03b516c847a3dbf5254cb8d25, type: 3}
   audioSource: {fileID: 1762100987}
   displayDurations:
-  - 28
+  - 22
   - 22
   - 19
   - 26
-  - 21
-  - 30
+  - 17
+  - 25
   isPaused: 0
 --- !u!4 &1762100989
 Transform:
