@@ -2005,9 +2005,9 @@ MonoBehaviour:
   - toggle: {fileID: 610508917}
     targetObject: {fileID: 2034005079}
   - toggle: {fileID: 396643470}
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 1475458077}
   - toggle: {fileID: 777700257}
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 1561116608}
 --- !u!4 &553800663
 Transform:
   m_ObjectHideFlags: 0
@@ -15074,6 +15074,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1561116608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1827660132626484, guid: fe883443e949049e19ab6cba6f558940,
+    type: 3}
+  m_PrefabInstance: {fileID: 584923580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1579488875 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5841290805947857415, guid: 3a8a98693623ef3448d42c5deff08398,
