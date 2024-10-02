@@ -1179,6 +1179,7 @@ MonoBehaviour:
   maxPoints: 100
   fadeDuration: 1
   initialColour: {r: 1, g: 1, b: 1, a: 1}
+  timer: 0
 --- !u!4 &354526831
 Transform:
   m_ObjectHideFlags: 0
@@ -8061,7 +8062,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 2
+    widthMultiplier: 10
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -8129,8 +8130,9 @@ MonoBehaviour:
   controllingObject: {fileID: 1211756187}
   lineRenderer: {fileID: 786934696}
   maxPoints: 100
-  fadeDuration: 1
+  fadeDuration: 1.5
   initialColour: {r: 1, g: 1, b: 1, a: 1}
+  timer: 0
 --- !u!4 &786934698
 Transform:
   m_ObjectHideFlags: 0

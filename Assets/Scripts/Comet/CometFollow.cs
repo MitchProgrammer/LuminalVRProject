@@ -17,6 +17,7 @@ public class CometFollow : MonoBehaviour
     public int maxPoints = 100;
     public float fadeDuration = 1f;
     public Color initialColour = Color.white;
+    public int timer;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class CometFollow : MonoBehaviour
 
         if (primaryInput.GetButtonDown(VRButton.One) || Input.GetMouseButtonDown(0))
         {
+            StopAllCoroutines();
             isDragging = true;
             points.Clear();
             pointColours.Clear();
@@ -64,6 +66,7 @@ public class CometFollow : MonoBehaviour
 
     void AddPointToLine()
     {
+        Debug.Log("Initial Colour: " + initialColour);
         points.Add(transform.position);
         pointColours.Add(initialColour);
         
@@ -72,7 +75,6 @@ public class CometFollow : MonoBehaviour
         lineRenderer.startColor = initialColour;
         lineRenderer.endColor = initialColour;
 
-        
         if (points.Count > maxPoints)
         {
             StartCoroutine(FadePoint(0));
