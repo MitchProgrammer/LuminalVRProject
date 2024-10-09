@@ -5,19 +5,55 @@ using UnityEngine;
 public class IndependentComet : MonoBehaviour
 {
     public GameObject endPlace;
+    public GameObject startPlace;
     public float moveSpeed;
-    private ParticleSystem cometParticles;
+    public ParticleSystem cometParticles;
+    public ParticleSystem babyParticles;
+
+    public Color[] colours;
+    private int lastColour;
 
     private void Start()
     {
-        cometParticles = GetComponent<ParticleSystem>();
+        gameObject.SetActive(false);
 
-        MoveToLocation(); //test
+        CometSpawn(); //test
     }
 
-    public void MoveToLocation()
+    public void CometSpawn()
     {
+        int randomIndex; // random output 
+
+        do // chooses random number, not allowed to be the last number it picked
+        {
+            randomIndex = Random.Range(0, colours.Length);
+        } while (randomIndex == lastColour);
+
+        cometParticles.startColor = colours[randomIndex];
+        babyParticles.startColor = colours[randomIndex];
+
+        lastColour = randomIndex;
+        gameObject.SetActive(true);
+        cometParticles.Play();
+        babyParticles.Play();
         StartCoroutine(MoveTowardsTarget());
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            StopAllCoroutines();
+            ResetComet();
+        }
+    }
+
+    private void ResetComet()
+    {
+        gameObject.SetActive(false);
+        transform.position = startPlace.transform.position;
+        transform.rotation = startPlace.transform.rotation;
+        CometSpawn();
     }
 
     private IEnumerator MoveTowardsTarget()
@@ -32,6 +68,8 @@ public class IndependentComet : MonoBehaviour
         if (cometParticles != null && cometParticles.isPlaying)
         {
             cometParticles.Stop();
+            babyParticles.Stop();
+            ResetComet();
         }
     }
 
