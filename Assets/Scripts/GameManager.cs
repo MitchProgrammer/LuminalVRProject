@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject menuCanvas; // Reference to the Menu Canvas
 
+    [Header("Audio")]
+    public AudioSource audioSource; // Reference to the AudioSource
+    public AudioClip buttonClickSound; // Clip to play when buttons are clicked
+
     private void Awake()
     {
         // Ensure singleton instance
@@ -168,18 +172,30 @@ public class GameManager : MonoBehaviour
         StartCoroutine(FadeAndLoadScene(menuScene));
     }
 
+    // Helper function to play button click sound
+    private void PlayButtonClickSound()
+    {
+        if (audioSource != null && buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+        }
+    }
+
     public void OnThreeMinuteButtonClick()
     {
-        GameManager.Instance.SetGameDurationAndStart(1);
+        PlayButtonClickSound();
+        GameManager.Instance.SetGameDurationAndStart(3);
     }
 
     public void OnFiveMinuteButtonClick()
     {
+        PlayButtonClickSound();
         GameManager.Instance.SetGameDurationAndStart(5);
     }
 
     public void OnTenMinuteButtonClick()
     {
+        PlayButtonClickSound();
         GameManager.Instance.SetGameDurationAndStart(10);
     }
 }
