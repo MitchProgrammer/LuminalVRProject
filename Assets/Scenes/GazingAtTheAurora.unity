@@ -1204,10 +1204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b68a28c59b71a24ebf465cb4f85e316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trailMaterial: {fileID: 0}
-  trailWidth: 0.1
-  trailLifetime: 2
-  trailObjects: []
   controllingObject: {fileID: 1211756187}
 --- !u!4 &354526831
 Transform:
@@ -12450,7 +12446,7 @@ PrefabInstance:
     - target: {fileID: 2653153344604433488, guid: f6bbcfa7e746d0340bd78dd22f35b3b3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3836811505428075909, guid: f6bbcfa7e746d0340bd78dd22f35b3b3,
         type: 3}
@@ -12460,7 +12456,7 @@ PrefabInstance:
     - target: {fileID: 3836811505428075909, guid: f6bbcfa7e746d0340bd78dd22f35b3b3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 346.2267
+      value: 496.1656
       objectReference: {fileID: 0}
     - target: {fileID: 3836811505428075909, guid: f6bbcfa7e746d0340bd78dd22f35b3b3,
         type: 3}
@@ -12509,6 +12505,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bbcfa7e746d0340bd78dd22f35b3b3, type: 3}
+--- !u!1 &737597065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2653153344604433488, guid: f6bbcfa7e746d0340bd78dd22f35b3b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 737597064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &737597066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737597065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b68a28c59b71a24ebf465cb4f85e316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllingObject: {fileID: 1211756187}
 --- !u!1 &743913421
 GameObject:
   m_ObjectHideFlags: 0
@@ -12886,10 +12901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b68a28c59b71a24ebf465cb4f85e316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trailMaterial: {fileID: 2100000, guid: 214ed67c55c3e0d49abfad09c25f5531, type: 2}
-  trailWidth: 10
-  trailLifetime: 2
-  trailObjects: []
   controllingObject: {fileID: 1211756187}
 --- !u!4 &786934698
 Transform:
