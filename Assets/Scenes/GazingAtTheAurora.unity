@@ -22791,12 +22791,12 @@ GameObject:
   - component: {fileID: 882404249}
   - component: {fileID: 882404248}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &882404248
 CapsuleCollider:
   m_ObjectHideFlags: 0
