@@ -11,6 +11,7 @@ public class IndependentComet : MonoBehaviour
     public ParticleSystem babyParticles;
 
     public Color[] colours;
+    public int emissionIntensity = 3;
     private int lastColour;
 
     private void Start()
@@ -29,8 +30,13 @@ public class IndependentComet : MonoBehaviour
             randomIndex = Random.Range(0, colours.Length);
         } while (randomIndex == lastColour);
 
-        cometParticles.startColor = colours[randomIndex];
-        babyParticles.startColor = colours[randomIndex];
+        Color finalEmissionColor = colours[randomIndex] * Mathf.LinearToGammaSpace(emissionIntensity);
+
+        Material particleMat = cometParticles.GetComponent<Renderer>().material;
+        particleMat.SetColor("_EmissionColor", finalEmissionColor);
+
+        Material babyParticleMat = babyParticles.GetComponent<Renderer>().material;
+        babyParticleMat.SetColor("_EmissionColor", finalEmissionColor);
 
         lastColour = randomIndex;
         gameObject.SetActive(true);

@@ -690,7 +690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146216633}
   m_LocalRotation: {x: -0, y: -0.7431063, z: -0, w: 0.6691735}
-  m_LocalPosition: {x: 103.2, y: 496.16556, z: 1816.7}
+  m_LocalPosition: {x: -1045, y: 1517, z: 1816.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12165,7 +12165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709450260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.026, y: 0, z: 0.256}
+  m_LocalPosition: {x: 0.007, y: 0, z: 0.077}
   m_LocalScale: {x: 10.56156, y: 10.56156, z: 10.56156}
   m_Children: []
   m_Father: {fileID: 874051487}
@@ -17731,7 +17731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPlace: {fileID: 1902503792}
   startPlace: {fileID: 146216633}
-  moveSpeed: 100
+  moveSpeed: 1000
   cometParticles: {fileID: 874051486}
   babyParticles: {fileID: 709450263}
   colours:
@@ -17740,6 +17740,7 @@ MonoBehaviour:
   - {r: 0.12437701, g: 0.59110105, b: 0.6132076, a: 1}
   - {r: 1, g: 0.8167933, b: 0.5707547, a: 1}
   - {r: 0.95512486, g: 0, b: 1, a: 1}
+  emissionIntensity: 10
 --- !u!199 &874051485
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -17782,7 +17783,7 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_SortMode: 1
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.6
+  m_MaxParticleSize: 0.01
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -22468,7 +22469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874051483}
   m_LocalRotation: {x: -0, y: -0.7431063, z: -0, w: 0.6691735}
-  m_LocalPosition: {x: 112.46, y: 496.16556, z: 1816.7}
+  m_LocalPosition: {x: 112.46, y: 1517, z: 1816.7}
   m_LocalScale: {x: 34.518322, y: 34.518307, z: 34.518322}
   m_Children:
   - {fileID: 709450264}
@@ -29759,7 +29760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902503792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3765, y: 496.16556, z: -333}
+  m_LocalPosition: {x: 7928, y: 1517, z: -333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
