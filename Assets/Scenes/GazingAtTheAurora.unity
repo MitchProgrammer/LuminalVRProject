@@ -154,7 +154,7 @@ RectTransform:
   m_Children:
   - {fileID: 129088326}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -359.999, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -694,7 +694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &189791068 stripped
 Transform:
@@ -747,7 +747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 468086, guid: da60e5460ab2b4a479d4ac2293e0c824, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 468086, guid: da60e5460ab2b4a479d4ac2293e0c824, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -889,10 +889,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "As the northern lights dance above, reflect on the vastness of the universe.
-    You may feel small in the face of this majestic display, and that\u2019s perfectly
-    okay. Embracing the feeling of being connected to something so vast and beautiful
-    is an incredibly profound experience."
+  m_text: Above, the northern lights begin to dance in vibrant colours. Let yourself
+    be captivated by their beauty, feeling a deep sense of peace as you connect with
+    something greater.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1060,6 +1059,205 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1769398284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &326612039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Name
+      value: fireplace
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1706.8563
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -231.31177
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1534.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6541164365096338498, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -2214797677057562355, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -86753616152694659, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 1219983921184480316, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: -6821525425418684968, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 4703986598385574537, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 2591765300213592016, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 2783248800129794165, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 4355273036164102250, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 5333214686151592489, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 7292560967177739650, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 5360962869936053749, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -7211149102646403716, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 7099239268165090962, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: 7709602753992245820, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 1947850028884006737, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: -3517759647890298427, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -6702759870167323868, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 2320905767506748161, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -4942000272713874952, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: -8995260425636326177, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    - target: {fileID: 3549992215745597226, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: -8754791987600871905, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: -4477252794309327575, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16a9627b9fcba994ebfdb19ab8ec2143, type: 2}
+    - target: {fileID: -4481557551996193326, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b98c453111ba1a429394ea30f748979, type: 2}
+    - target: {fileID: 4029220967844278785, guid: 7d719931cdb99de4092edf3997da1ffa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60503ea7719e47149bb75fe2c41a7dc6, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d719931cdb99de4092edf3997da1ffa, type: 3}
 --- !u!1 &335887377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354170589
 GameObject:
@@ -1173,7 +1371,7 @@ Transform:
   - {fileID: 311501350}
   - {fileID: 102584058}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354526829
 GameObject:
@@ -1218,7 +1416,7 @@ Transform:
   - {fileID: 820951332}
   - {fileID: 1684271212}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396643468
 GameObject:
@@ -1562,9 +1760,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Let go of any need to be more than you are. Like snowflakes gently settling,
-    allow yourself to settle into this moment. Breathe deeply, and with each exhale,
-    release any feelings of inadequacy. You are enough, just as you are.
+  m_text: With each breath, let go of any self-doubt. Feel yourself settle into this
+    moment, calm and still, like snowflakes gently coming to rest. Know that you are
+    enough, just as you are.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1754,11 +1952,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: As you gaze into the deep vibrant colours of the aurora, a comet flies overhead,
-    floating across the sky like a beacon sent from another planet. For something
-    that happens constantly, such a phenomenon is anything but mundane to our human
-    minds, where space is like a dream that we can only imagine, but never experience
-    firsthand.
+  m_text: "As you watch, a comet glides across the sky\u2014a rare and beautiful reminder
+    of the universe\u2019s mysteries."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2016,7 +2211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &573134383
 GameObject:
@@ -12347,7 +12542,7 @@ Transform:
   - {fileID: 1437609441}
   - {fileID: 1702486700}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 195, z: 0}
 --- !u!1001 &734350493
 PrefabInstance:
@@ -22474,7 +22669,7 @@ Transform:
   m_Children:
   - {fileID: 709450264}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -95.993004, z: 0}
 --- !u!1 &877249233
 GameObject:
@@ -22601,7 +22796,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879554575
 GameObject:
@@ -22740,7 +22935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &895913583
 GameObject:
@@ -22863,10 +23058,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: If your mind starts to wander, gently bring your attention back to your
-    breath and the beauty of the lights above. Let your thoughts drift away like snowflakes
-    in the breeze and keep your focus on the calming rhythm of your breathing in this
-    peaceful, snowy landscape.
+  m_text: If your mind wanders, focus again on your breath and the steady rhythm of
+    the aurora. Let thoughts drift away like clouds in the sky.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23131,10 +23324,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Now, gently return your focus to your body. Feel the cool snow under your
-    feet and the soft glow of the aurora overhead. Take a deep breath in, and as you
-    exhale, bring your awareness back to the present. Savor the calm and tranquillity
-    of this moment and carry this sense of peace with you as you continue your day.
+  m_text: Feel the solid snow beneath you and the soft glow of the lights above. Take
+    a final deep breath, carrying this calm back into the present. Thank you for joining;
+    may this experience bring you peace and clarity.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24070,7 +24262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413100397
 GameObject:
@@ -24150,7 +24342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417966802
 GameObject:
@@ -24372,7 +24564,7 @@ Transform:
   - {fileID: 2092542337}
   - {fileID: 1970253707}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1512347264 stripped
 Transform:
@@ -24535,7 +24727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1561116608 stripped
 GameObject:
@@ -29746,6 +29938,198 @@ Transform:
   m_Father: {fileID: 1579488875}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1871153023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871153024}
+  - component: {fileID: 1871153028}
+  - component: {fileID: 1871153027}
+  - component: {fileID: 1871153026}
+  - component: {fileID: 1871153025}
+  m_Layer: 5
+  m_Name: Text (TMP) (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1871153024
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871153023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1970253707}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.050002992, y: 0}
+  m_SizeDelta: {x: 300.1, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1871153025
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871153023}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1871153026
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871153023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c052528cee3f18d438c6889ea66b574a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1871153027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871153023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: This concludes the meditation portion of this experience, feel free to stay
+    and observe the aurora at your leisure, thank you for listening and we hope this
+    has helped bring peace and clarity to your day.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 7
+  m_fontSizeBase: 7
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 1871153027}
+    characterCount: 328
+    spriteCount: 0
+    spaceCount: 53
+    wordCount: 53
+    linkCount: 0
+    lineCount: 5
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 1
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1871153028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871153023}
+  m_CullTransparentMesh: 0
 --- !u!1 &1902503792
 GameObject:
   m_ObjectHideFlags: 0
@@ -29774,7 +30158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1942171628
 PrefabInstance:
@@ -29966,6 +30350,7 @@ RectTransform:
   - {fileID: 495074754}
   - {fileID: 990287541}
   - {fileID: 1090315202}
+  - {fileID: 1871153024}
   m_Father: {fileID: 1475458078}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -7.6940002, y: 194.907, z: 0.26200002}
@@ -34959,7 +35344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986419654
 GameObject:
@@ -35271,9 +35656,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Picture yourself standing on soft snow, surrounded by crisp, cool air. Take
-    a deep breath in, feeling the freshness, and slowly exhale, releasing all tension.
-    Let the stillness of this snowy landscape ground you in the present moment.
+  m_text: You stand on a soft bed of snow in a vast, quiet landscape. Take a deep
+    breath, filling your lungs with the crisp, cool air. As you exhale, feel any tension
+    melt away, grounding yourself in this serene, snowy world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71da8c6025bdee44791a79a1461a0bef, type: 2}
   m_sharedMaterial: {fileID: -1613081480679223234, guid: 71da8c6025bdee44791a79a1461a0bef,
@@ -35343,10 +35728,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2069013661}
-    characterCount: 234
+    characterCount: 215
     spriteCount: 0
-    spaceCount: 37
-    wordCount: 38
+    spaceCount: 39
+    wordCount: 40
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -35678,21 +36063,24 @@ MonoBehaviour:
   - {fileID: 495074757}
   - {fileID: 990287544}
   - {fileID: 1090315205}
+  - {fileID: 1871153027}
   audioClips:
-  - {fileID: 8300000, guid: f7afdb6442315ac47b915e2c58e0bd8e, type: 3}
-  - {fileID: 8300000, guid: 272aae40a5a490b46a66bdb91c65acbf, type: 3}
-  - {fileID: 8300000, guid: b6755d626632a6c43854591c7d979205, type: 3}
-  - {fileID: 8300000, guid: ba3eaf41e29260f43b3005cdbb1518f3, type: 3}
-  - {fileID: 8300000, guid: f1a1f8ce76b723a4ab40d55ed5848e69, type: 3}
-  - {fileID: 8300000, guid: edfe2b7fb8f88bd4eab5e597925dc3e5, type: 3}
+  - {fileID: 8300000, guid: ed045da7fb8e8b1489793c1dfd3850e0, type: 3}
+  - {fileID: 8300000, guid: 8b5670642c2114a43b04107df81ca457, type: 3}
+  - {fileID: 8300000, guid: 972d6c0ee9c890b408a201f8dc0f2dcd, type: 3}
+  - {fileID: 8300000, guid: 6b1eb019ab7e93e4dadaffe580905819, type: 3}
+  - {fileID: 8300000, guid: 6366e0783ea3b9d42a3e744c83616fcd, type: 3}
+  - {fileID: 8300000, guid: 047730ff4f9f3214c9b7f96960534454, type: 3}
+  - {fileID: 8300000, guid: bca26403494f55c468e9746f4712d47d, type: 3}
   audioSource: {fileID: 2092542338}
   displayDurations:
-  - 20
-  - 22
-  - 24
-  - 19
   - 17
-  - 24
+  - 16
+  - 11
+  - 18
+  - 13
+  - 18
+  - 16
   isPaused: 0
 --- !u!1 &2095048471
 GameObject:
