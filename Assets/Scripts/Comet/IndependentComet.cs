@@ -45,21 +45,11 @@ public class IndependentComet : MonoBehaviour
         StartCoroutine(MoveTowardsTarget());
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            StopAllCoroutines();
-            ResetComet();
-        }
-    }
-
     private void ResetComet()
     {
         gameObject.SetActive(false);
         transform.position = startPlace.transform.position;
         transform.rotation = startPlace.transform.rotation;
-        CometSpawn();
     }
 
     private IEnumerator MoveTowardsTarget()
